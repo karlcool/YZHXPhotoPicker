@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface HXGetVideoImgViewController : UIViewController
 @property (nonatomic, strong) NSURL *videoUrl;
 @property (nonatomic, copy) void (^clickNext)(UIImage *img);
+- (UIImage *)thumbnailImageForVideo:(NSURL *)videoURL atTime:(NSTimeInterval)time;
 @end
 
 NS_ASSUME_NONNULL_END

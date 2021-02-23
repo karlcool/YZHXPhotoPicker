@@ -14,12 +14,12 @@
     static NSBundle *hxBundle = nil;
     if (hxBundle == nil) {
         NSBundle *bundle = [NSBundle bundleForClass:NSClassFromString(@"HXPhotoPicker")];
-        NSString *path = [bundle pathForResource:@"HXPhotoPicker" ofType:@"bundle"];
+        NSString *path = [bundle pathForResource:@"YZHXPhotoPicker" ofType:@"bundle"];
         //使用framework形式
         if (!path) {
             NSURL *associateBundleURL = [[NSBundle mainBundle] URLForResource:@"Frameworks" withExtension:nil];
             if (associateBundleURL) {
-                associateBundleURL = [associateBundleURL URLByAppendingPathComponent:@"HXPhotoPicker"];
+                associateBundleURL = [associateBundleURL URLByAppendingPathComponent:@"YZHXPhotoPicker"];
                 associateBundleURL = [associateBundleURL URLByAppendingPathExtension:@"framework"];
                 NSBundle *associateBunle = [NSBundle bundleWithURL:associateBundleURL];
                 path = [associateBunle pathForResource:@"HXPhotoPicker" ofType:@"bundle"];

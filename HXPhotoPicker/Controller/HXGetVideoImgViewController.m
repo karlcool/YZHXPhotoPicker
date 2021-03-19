@@ -95,6 +95,7 @@
     [self.selectImgView addGestureRecognizer:ges];
     
 }
+
 //点击关闭
 - (IBAction)onCancel:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];

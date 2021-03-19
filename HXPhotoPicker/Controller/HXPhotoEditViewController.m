@@ -1112,6 +1112,7 @@
     }
     return _clipBtn;
 }
+
 @end
 
 @implementation HXEditGridLayer

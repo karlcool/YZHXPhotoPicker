@@ -943,7 +943,7 @@
     _enabled = enabled;
     self.restoreBtn.enabled = enabled;
     if (!self.manager.configuration.singleSelected) {
-        self.clipBtn.enabled = enabled;
+        self.clipBtn.enabled = YES;
     }
 }
 - (void)didRestoreBtnClick {
@@ -1093,10 +1093,10 @@
         }else {
             [_clipBtn setTitle:[NSBundle hx_localizedStringForKey:@"裁剪"] forState:UIControlStateNormal];
             if (!self.manager.configuration.movableCropBox) {
-                _clipBtn.enabled = NO;
+                _clipBtn.enabled = YES;
             }else {
                 if (CGPointEqualToPoint(self.manager.configuration.movableCropBoxCustomRatio, CGPointZero)) {
-                    _clipBtn.enabled = NO;
+                    _clipBtn.enabled = YES;
                 }
             }
         }

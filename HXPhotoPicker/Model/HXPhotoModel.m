@@ -1325,6 +1325,7 @@
     if (!presetName) {
         presetName = AVAssetExportPresetMediumQuality;
     }
+    presetName = AVAssetExportPresetHighestQuality;
 //    PHVideoRequestOptionsDeliveryMode mode = [presetName isEqualToString:AVAssetExportPresetHighestQuality] ? PHVideoRequestOptionsDeliveryModeHighQualityFormat : PHVideoRequestOptionsDeliveryModeFastFormat;
     [self requestAVAssetStartRequestICloud:startRequestICloud progressHandler:iCloudProgressHandler success:^(AVAsset * _Nullable avAsset, AVAudioMix * _Nullable audioMix, HXPhotoModel * _Nullable model, NSDictionary * _Nullable info) {
         NSArray *presets = [AVAssetExportSession exportPresetsCompatibleWithAsset:avAsset];
